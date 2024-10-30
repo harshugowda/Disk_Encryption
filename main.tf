@@ -102,7 +102,7 @@ resource "azurerm_key_vault_access_policy" "example-user" {
   ]
 }
 
-resource "azurerm_role_assignment" "example-disk" {
+resource "azurerm_role_assignment" "exampl-disk" {
   scope                = azurerm_key_vault.example.id
   role_definition_name = "Key Vault Crypto Service Encryption User"
   principal_id         = azurerm_disk_encryption_set.example.identity[0].principal_id
